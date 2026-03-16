@@ -1,0 +1,166 @@
+:root {
+    --navy-color: #254067;
+    --red-color: #bc464b;
+    --green-color: #367e3c;
+    --dark-green-color: #08606c;
+    --lime-green-color: #b6f022;
+    --pale-green-color: #b1de3e;
+
+    --dark-color: #2f3421;
+    --light-color: #f1f1f1;
+}
+
+/* Utility */
+.bg-pale-green {
+    background-color: var(--pale-green-color);
+}
+.btn-lime-green-outline {
+    color: var(--dark-color);
+    background-color: var(--lime-green-color);
+}
+.btn-lime-green-outline:hover {
+    color: var(--lime-green-color);
+    border-color: var(--lime-green-color);
+    background-color: transparent;
+}
+.btn-lime-green {
+    color: var(--dark-color);
+    background-color: var(--lime-green-color);
+}
+.btn-lime-green:hover {
+    color: var(--light-color);
+    background-color: var(--green-color);
+}
+
+.bg-lime-green {
+    background-color: var(--lime-green-color);
+}
+.thrash__type-box {
+    padding: 2rem 4rem 0.5rem 4rem;
+}
+.text-lime-green {
+    color: var(--lime-green-color);
+}
+.text-light-hover {
+    color: var(--light-color);
+}
+.text-light-hover:hover {
+    color: var(--pale-green-color) !important;
+}
+
+/* Section */
+
+.text-lime {
+    color: var(--lime-green-color);
+}
+.contact__home {
+    height: 100%;
+    background-image: url(/asset/img/section/home-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40%;
+}
+.home {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/asset/img/section/home-bg.png);
+}
+.navbar-nav li a {
+    color: white;
+}
+.score-box {
+    background-color: #b6f022;
+    text-align: center;
+}
+.score-box h1 {
+    font-weight: bold;
+    margin: 0;
+}
+.score-box h2 {
+    margin: 0;
+}
+.logo__about h1,
+h2 {
+    font-weight: bold;
+}
+.logo__about-text {
+    color: #254067;
+}
+body {
+    background-color: #f1f1f1;
+}
+.system__home-flow {
+    border-bottom: solid var(--lime-green-color) 1.3rem;
+}
+
+.navbar {
+    transition: all 0.3s ease-in-out;
+    background-color: transparent; /* Or whatever your starting state is */
+}
+
+.fill__home-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: right;
+    background-size: cover;
+    background-image: url(/asset/img/section/meteor-garden.png);
+}
+
+/* State after scrolling */
+.img-scrolled {
+    display: none;
+    opacity: 0;
+}
+.img-initial {
+    display: inline-block;
+    opacity: 1;
+}
+.navbar-scrolled {
+    background-color: var(--light-color) !important; /* Bootstrap Dark color, or any color you like */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-scrolled .navbar-nav .nav-item .nav-link,
+.navbar-scrolled .navbar__btn a {
+    color: var(--dark-color);
+}
+.navbar-scrolled .img-initial {
+    display: none;
+    opacity: 0;
+}
+.navbar-scrolled .img-scrolled {
+    display: inline-block;
+    opacity: 1;
+}
+
+.slider {
+    width: 100%;
+    animation: slide 9s infinite;
+}
+
+.footer__copyright {
+    border-top: 1px #f1f1f16e solid;
+}
+
+/* @keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    33% {
+        transform: translateX(540px);
+    }
+    66% {
+        transform: translateX(-540px);
+    }
+} */
+
+@media screen and (max-width: 767px) {
+    .score {
+        top: 0 !important;
+        position: relative !important;
+        margin-top: 2rem;
+    }
+}

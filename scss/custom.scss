@@ -1,0 +1,38 @@
+// Custom.scss
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../asset/plugin/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+$red: #bc464b;
+$blue: #254067;
+$green: #367e3c;
+$dark: #2f3421;
+$light: #f1f1f1;
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../asset/plugin/bootstrap/scss/variables";
+@import "../asset/plugin/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../asset/plugin/bootstrap/scss/maps";
+@import "../asset/plugin/bootstrap/scss/mixins";
+@import "../asset/plugin/bootstrap/scss/root";
+
+// 6. Include any other optional stylesheet partials as desired; list below is not inclusive of all available stylesheets
+@import "../asset/plugin/bootstrap/scss/utilities";
+@import "../asset/plugin/bootstrap/scss/reboot";
+@import "../asset/plugin/bootstrap/scss/type";
+@import "../asset/plugin/bootstrap/scss/images";
+@import "../asset/plugin/bootstrap/scss/containers";
+@import "../asset/plugin/bootstrap/scss/grid";
+@import "../asset/plugin/bootstrap/scss/helpers";
+// ...
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../asset/plugin/bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
