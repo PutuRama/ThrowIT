@@ -49,11 +49,7 @@
 }
 
 /* Section */
-
-.text-lime {
-    color: var(--lime-green-color);
-}
-.contact__home {
+.about__home {
     height: 100%;
     background-image: url(/asset/img/section/home-bg.png);
     background-repeat: no-repeat;
@@ -65,6 +61,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(/asset/img/section/home-bg.png);
+}
+.contact__home {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/asset/img/section/contact/hero.png);
 }
 .navbar-nav li a {
     color: white;
