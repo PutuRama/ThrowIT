@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.table-success {
+  --bs-table-bg: #b1de3e;
+  --bs-table-color: #254067;
+  --bs-table-border-color: #b1de3e;
+}
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #254067;

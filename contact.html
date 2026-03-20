@@ -34,10 +34,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-light-hover" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-light-hover" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light-hover" href="#">Bank</a>
+                            <a class="nav-link text-light-hover" href="bank.html">Bank</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light-hover" href="about.html">About</a>
@@ -55,15 +55,83 @@
         </nav>
 
         <!-- HERO -->
-        <section class="contact__home d-flex justify-content-center align-items-center">
+        <section class="contact__hero d-flex justify-content-center align-items-center">
             <div class="container w-75 text-center">
                 <h1 class="text-center display-1 fw-bolder text-lime-green">CONTACT US</h1>
             </div>
         </section>
 
-        <section class="contact__form">
-            <form action=""></form>
+        <section class="contact__form my-5">
+            <div class="container">
+                <h4 class="display-5 text-center text-primary fw-bold mb-4">Any Question?</h4>
+                <form class="">
+                    <div class="row mb-3">
+                        <div class="col-lg-6">
+                            <label for="name" class="form-label fw-medium text-dark">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="username" />
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="email" class="form-label fw-medium text-dark">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address" class="form-label fw-medium text-dark">Home address</label>
+                        <input type="email" class="form-control" id="address" placeholder="Jln. No 69 Ambarawati" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comment" class="form-label fw-medium text-dark">Comment</label>
+                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-lime-green w-100">Submit</button>
+                </form>
+            </div>
         </section>
+        <!-- WORK SCHEDULE -->
+        <section class="schedule__contact my-5">
+            <div class="container">
+                <div class="schedule__contact-container d-flex flex-column text-center">
+                    <h1 class="fw-bold text-primary mb-3">Work Schedule</h1>
+                    <div class="overflow-hidden rounded-3 border">
+                        <table class="table table-borderless mb-0">
+                            <thead class="table-success">
+                                <tr class="">
+                                    <th scope="col" class="text-primary">DAY</th>
+                                    <th scope="col" class="text-primary">HOUR</th>
+                                </tr>
+                            </thead>
+                            <tbody class="">
+                                <tr>
+                                    <th class="fw-semibold text-primary" scope="row"></th>
+                                    <td class="fw-semibold text-primary"></td>
+                                </tr>
+                                <tr class="">
+                                    <th scope="row" class="fw-semibold text-primary">Monday - Friday</th>
+                                    <td class="fw-semibold text-primary">07.00-18.00</td>
+                                </tr>
+                                <tr>
+                                    <th class="fw-semibold text-primary" scope="row"></th>
+                                    <td class="fw-semibold text-primary"></td>
+                                </tr>
+                                <tr>
+                                    <th class="fw-semibold text-primary" scope="row">Saturday - Sunday</th>
+                                    <td class="fw-semibold text-primary">07.00-15.00</td>
+                                </tr>
+                                <tr>
+                                    <th class="fw-semibold text-primary" scope="row"></th>
+                                    <td class="fw-semibold text-primary"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact__home text-center py-5 mt-4"></section>
 
         <!-- FOOTER -->
         <footer class="footer bg-success pt-5">
