@@ -2,7 +2,7 @@
     --navy-color: #254067;
     --red-color: #bc464b;
     --green-color: #367e3c;
-    --dark-green-color: #073D6B;
+    --dark-green-color: #073d6b;
     --lime-green-color: #b6f022;
     --pale-green-color: #b1de3e;
 
@@ -12,7 +12,6 @@
 
 /* Utility */
 .bg-pale-green {
-    
     background-color: var(--pale-green-color);
 }
 .btn-lime-green-outline {
@@ -182,7 +181,7 @@ body {
     border-top: 1px #f1f1f16e solid;
 }
 
-/* @keyframes slide {
+@keyframes slide {
     0% {
         transform: translateX(0%);
     }
@@ -192,7 +191,7 @@ body {
     66% {
         transform: translateX(-540px);
     }
-} */
+}
 
 @media screen and (max-width: 767px) {
     .score {
