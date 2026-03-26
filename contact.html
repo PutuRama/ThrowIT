@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web Bank Sampah</title>
+        <link rel="shortcut icon" href="asset/img/logo/ThrowIT_logo_without_text.png" type="image/x-icon" />
+
+        <link rel="stylesheet" href="asset/plugin/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="asset/plugin/boxicon/fonts/basic/boxicons.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="asset/plugin/fontawesome/css/all.min.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-dark navbar-expand-lg position-fixed start-0 end-0 z-3 p-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="asset/img/logo/ThrowIT_logo_white.png" class="img-initial" />
+                    <img src="asset/img/logo/ThrowIT_logo_Main.png" class="img-scrolled" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar__pad-mobile mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-light-hover fw-medium fs-custom" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-light-hover fw-medium fs-custom" href="bank.html">Bank</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-light-hover fw-medium fs-custom" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-light-hover fw-medium fs-custom" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="navbar__btn d-flex align-items-center justify-content-end mx-2">
+                        <a
+                            class="me-3 text-lime-green text-decoration-none fw-medium fs-custom text-light-hover"
+                            href="login.html"
+                            >Sign in</a
+                        >
+                        <a href="signUP.html" class="btn btn-lime-green-outline rounded-pill" type="submit"
+                            >Get Started</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <section class="contact__hero d-flex justify-content-center align-items-center">
+            <div class="container w-75 text-center">
+                <h1 class="text-center display-1 fw-bolder text-lime-green">CONTACT US</h1>
+            </div>
+        </section>
+        <!-- QUESTION  -->
+        <div class="contact__ornament"></div>
+        <div class="spacing"></div>
+
+        <section class="contact__form my-5 container">
+            <div class="row justify-content-center align-items-center bg-white p-0 rounded-3">
+                <div class="col-lg-6 p-0">
+                    <img class="img-fluid p-0 rounded-3" src="asset/img/section/gallery/sampah4.jpg" alt="" />
+                </div>
+                <div class="col-lg-6 p-5">
+                    <h4 class="display-4 text-center text-success fw-bold mb-4" id="question">Any Question?</h4>
+                    <form class="">
+                        <div class="d-flex flex-column mb-3 row-gap-2">
+                            <div class="">
+                                <label for="name" class="form-label fw-medium text-dark">Subject</label>
+                                <input type="text" class="form-control" id="name" />
+                            </div>
+                            <div class="">
+                                <label for="comment" class="form-label fw-medium text-dark">Comment</label>
+                                <textarea class="form-control" id="comment" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn btn-green-outline w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacing"></div>
+
+        <!-- FAQ -->
+        <section class="schedule__contact bg-success" style="padding-block: 5rem">
+            <div class="panel__container container d-flex flex-column row-gap-5 w-75">
+                <div class="schedule__contact-container d-flex flex-column">
+                    <div class="text-center text-light mb-5 mx-a">
+                        <h2 class="display-4 fw-bold mb-2">We Got <span class="text-warning">Your Answer</span></h2>
+                        <p>Quickly find answers about collections, payments, and registration.</p>
+                    </div>
+                    <p class="accordion text-light border-bottom border-1 border-light-subtle text-start w-100 mb-0">
+                        <i class="fa-solid fa-angle-down ms-auto"></i>
+                        What is the purpose of having a Trash Bank?
+                    </p>
+                    <div class="panel">
+                        <p class="p-3 mb-0">
+                            The primary purpose of a trash bank is to encourage the community to manage waste
+                            responsibly while keeping the environment clean. It aims to reduce the volume of trash sent
+                            to landfills by promoting recycling. Additionally, it provides economic benefits by turning
+                            household waste into a valuable source of extra income.
+                        </p>
+                    </div>
+                </div>
+                <div class="schedule__contact-container d-flex flex-column">
+                    <p class="accordion text-light border-bottom border-1 border-light-subtle text-start w-100 mb-0">
+                        <i class="fa-solid fa-angle-down ms-auto"></i>
+                        Do the payments include a fee?
+                    </p>
+                    <div class="panel">
+                        <p class="p-3 mb-0">
+                            Regarding payments, you typically have two convenient options. You can choose to deliver
+                            your sorted waste directly to the bank to receive the full payment without deductions.
+                            Alternatively, you can opt for a transport service to pick up the waste from your home,
+                            which usually involves a small service fee.
+                        </p>
+                    </div>
+                </div>
+                <div class="schedule__contact-container d-flex flex-column">
+                    <p class="accordion text-light border-bottom border-1 border-light-subtle text-start w-100 mb-0">
+                        <i class="fa-solid fa-angle-down ms-auto"></i>
+                        Can everyone become a customer of the Garbage Bank?
+                    </p>
+                    <div class="panel">
+                        <p class="p-3 mb-0">
+                            Yes, everyone is welcome to become a customer! Whether you are an individual, a household, a
+                            student, or even a small business, you can join. Most banks only require a simple
+                            registration process to open a "trash savings account," making it easy for the whole
+                            community to participate and save.
+                        </p>
+                    </div>
+                </div>
+                <div class="schedule__contact-container d-flex flex-column">
+                    <p class="accordion text-light border-bottom border-1 border-light-subtle text-start w-100 mb-0">
+                        <i class="fa-solid fa-angle-down ms-auto"></i>
+                        How is waste assessed at the Waste Bank?
+                    </p>
+                    <div class="panel">
+                        <p class="p-3 mb-0">
+                            Waste is assessed based on its specific category and its total weight. When you deposit your
+                            items, the staff will categorize them—such as plastic, paper, or metal—and weigh them
+                            carefully. The value is then calculated using the current market price for each material
+                            before being added to your account.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacing"></div>
+
+        <!-- INFORMATION -->
+
+        <section class="container my-3">
+            <div class="row justify-content-center row-gap-3 text-center">
+                <div class="text-center mb-5 mx-a">
+                    <h2 class="display-4 fw-bold mb-2">Our <span class="text-success">Additional Information</span></h2>
+                    <p class="w-75 mx-auto">Find all the details on our schedules, locations, and contacts</p>
+                </div>
+                <div class="d-flex flex-column row-gap-3 col-lg-6">
+                    <div class="schedule-info d-flex align-items-center p-3 gap-3 rounded-3">
+                        <i class="fa-solid fa-clock fs-1"></i>
+                        <div class="text-start">
+                            <h1 class="mb-0 fs-3">Schedule</h1>
+                            <p class="mb-0">Week Days : 09:00 - 17:00</p>
+                            <p class="mb-0">Week End : 09:00 - 13:00</p>
+                        </div>
+                    </div>
+                    <div class="location-info d-flex align-items-center p-3 gap-3 rounded-3">
+                        <i class="fa-solid fa-location-dot fs-1"></i>
+                        <div class="text-start">
+                            <h1 class="mb-0 fs-3">Location</h1>
+                            <p class="mb-0">Jln. Ambarawati no.67, Dewa Ambalabu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="information__contact-margin d-flex flex-column row-gap-3 col-lg-6">
+                    <div class="telepon-info d-flex align-items-center p-3 gap-3 rounded-3">
+                        <i class="fa-solid fa-phone fs-1"></i>
+                        <div class="text-start">
+                            <h1 class="mb-0 fs-3">Contact</h1>
+                            <p class="mb-0">+62 1234567</p>
+                        </div>
+                    </div>
+                    <div class="email-info d-flex align-items-center p-3 gap-3 rounded-3">
+                        <i class="fa-solid far fa-envelope fs-1"></i>
+                        <div class="text-start">
+                            <h1 class="mb-0 fs-3">Email</h1>
+                            <p class="mb-0">ThrowIT@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacing"></div>
+
+        <!-- MAPS -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8999.306123745711!2d115.26554766341717!3d-8.541921774277593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d9281ad70ed%3A0x8a2f9db3b92cf2a3!2sJl.%20Ambarawati%2C%20Kecamatan%20Ubud%2C%20Kabupaten%20Gianyar%2C%20Bali%2080571!5e0!3m2!1sid!2sid!4v1773573446158!5m2!1sid!2sid"
+            height="300"
+            style="border: 0; width: 100%"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <!-- FOOTER -->
+        <footer class="footer pt-5">
+            <div class="container">
+                <div class="row row-gap-5 text-light mb-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer__logo d-flex justify-content-center align-items-center rounded-3">
+                            <img src="asset/img/logo/ThrowIT_logoArtboard 1_45.png" class="w-50" alt="ThrowIT Logo" />
+                            <p class="ms-lg-4 mt-2">
+                                Creating a healthier environment by using Throw IT to inspire awareness and responsible
+                                waste habits in every home.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer__bank text-center">
+                            <i class="fa-solid fa-trash-arrow-up" style="font-size: 7rem"></i>
+                            <h1 class="fw-bold text-light mb-3 mt-2">
+                                FILL YOU <span class="text-warning">BANK</span>
+                            </h1>
+                            <a href="signUP.html" class="btn btn-lime-green-outline rounded-pill">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                        <div class="footer__nav">
+                            <h6>Navigation:</h6>
+                            <ul class="mb-2 navbar-nav navbar-nav_center">
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="bank.html">Bank</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                        <div class="footer__nav">
+                            <h6>Most Views:</h6>
+                            <ul class="mb-2 navbar-nav navbar-nav_center">
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="bank.html#calculation">Calculation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="bank.html#payment">Payment</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="about.html#team">Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="contact.html#question">Question</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright text-light d-flex align-items-center justify-content-between py-3">
+                    <h6>Copyright @2026; Designed by Throw IT Team</h6>
+                    <div class="footer__social">
+                        <ul class="navbar-nav flex-row">
+                            <li class="nav-item me-1">
+                                <a class="nav-link" href="https://www.instagram.com/" target="_blank">
+                                    <i class="fa-brands fa-instagram fs-4 text-light-hover"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-1">
+                                <a class="nav-link" href="https://www.facebook.com/?locale=id_ID" target="_blank">
+                                    <i class="fa-brands fa-facebook fs-4 text-light-hover"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-1">
+                                <a class="nav-link" href="https://www.youtube.com/" target="_blank">
+                                    <i class="fa-brands fa-youtube fs-4 text-light-hover"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-1">
+                                <a class="nav-link" href="https://www.tiktok.com/id-ID/" target="_blank">
+                                    <i class="fa-brands fa-tiktok fs-4 text-light-hover"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="asset/plugin/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="asset/plugin/fontawesome/js/all.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

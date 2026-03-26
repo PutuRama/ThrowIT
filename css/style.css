@@ -1,0 +1,646 @@
+:root {
+    --blue-color: #4069c2;
+    --red-color: #c24040;
+    --green-color: #487a22;
+    --yellow-color: #ede854;
+    --dark-green-color: #0c4627;
+    --lime-green-color: #93c93c;
+    --pale-green-color: #cddfa0;
+
+    --dark-color: #2f3421;
+    --light-color: #f1f1f1;
+    --transition-fast-drs: 150ms;
+    --transition-normal-drs: 250ms;
+}
+
+@font-face {
+    font-family: Expressa Bold;
+    src: url(../asset/font/Expressa\ Bold.ttf);
+}
+@font-face {
+    font-family: Expressa Regular;
+    src: url(../asset/font/Expressa\ Regular.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../asset/font/Poppins-Regular.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Expressa Bold";
+}
+
+body {
+    color: var(--dark-color);
+}
+p {
+    font-family: "Poppins";
+}
+
+/* Utility */
+.btn {
+    padding: 0.7rem 1.5rem;
+    font-weight: 500;
+    transition: var(--transition-normal-drs) ease-in-out;
+}
+.btn-lime-green-outline {
+    color: var(--dark-color);
+    background-color: var(--lime-green-color);
+}
+.btn-lime-green-outline:hover {
+    color: var(--lime-green-color);
+    border-color: var(--lime-green-color);
+    background-color: transparent;
+}
+.btn-green-outline {
+    background-color: var(--green-color);
+    border: 1px solid var(--green-color);
+    color: var(--light-color);
+}
+.btn-green-outline:hover {
+    background-color: transparent;
+    border-color: var(--green-color);
+    color: var(--green-color);
+}
+
+.bg-lime-green {
+    background-color: var(--lime-green-color);
+}
+.thrash__type-box {
+    padding: 2rem 4rem 0.5rem 4rem;
+}
+.text-lime-green {
+    color: var(--lime-green-color);
+}
+.text-light-hover {
+    color: var(--light-color);
+    transition: var(--transition-fast-drs) ease-in-out;
+}
+.text-light-hover:hover {
+    color: var(--lime-green-color) !important;
+}
+.form-control,
+.form-select {
+    border-color: color-mix(in srgb, var(--green-color), 20% transparent);
+}
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--pale-green-color);
+    box-shadow: 0 0 5px color-mix(in srgb, var(--green-color), 20% transparent);
+}
+.form-select {
+    color: var(--dark-color);
+}
+.accordion {
+    cursor: pointer;
+}
+.accordion:hover {
+    color: var(--light-color);
+    background: var(--green-color);
+}
+.fs-custom {
+    font-size: 1.1rem;
+}
+.spacing {
+    width: 100%;
+    height: 15vh;
+}
+.hover__effect {
+    position: relative;
+    flex: 0.5;
+    min-width: 100px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.effect_blue::before,
+.effect_red::before,
+.effect_green::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.effect_blue::before {
+    background-color: color-mix(in srgb, var(--blue-color), 50% transparent);
+    transition: 0.5s;
+}
+.effect_red::before {
+    background-color: color-mix(in srgb, var(--red-color), 50% transparent);
+    transition: 0.5s;
+}
+.effect_green::before {
+    background-color: color-mix(in srgb, var(--green-color), 50% transparent);
+    transition: 0.5s;
+}
+.hover__effect.effect_blue:hover .content__overlay svg {
+    color: var(--blue-color);
+}
+.hover__effect.effect_red:hover .content__overlay svg {
+    color: var(--red-color);
+}
+.hover__effect.effect_green:hover .content__overlay svg {
+    color: var(--green-color);
+}
+.hover__effect img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1) brightness(0.6);
+    transition: 0.6s;
+}
+.effect_blue:hover::before,
+.effect_red:hover::before,
+.effect_green:hover::before {
+    background-color: transparent;
+}
+
+.hover__effect:hover {
+    flex: 1;
+}
+.hover__effect:hover img,
+.hover__effect.active img {
+    filter: grayscale(0) brightness(0.3);
+    transform: scale(1.05);
+}
+.content__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 2;
+}
+
+.text-content {
+    opacity: 0;
+    max-height: 0;
+    transition: all 300ms ease-in-out;
+    overflow: hidden;
+}
+.text-content h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hover__effect:hover .text-content {
+    opacity: 1;
+    max-height: 200px;
+    margin-top: 10px;
+}
+.hover__effect:hover i {
+    transform: scale(0.8);
+}
+
+/* Section */
+.about__home {
+    height: 100vh;
+    background-image: url(/asset/img/section/home-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40%;
+}
+.home {
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/asset/img/section/home-bg.png);
+    border-bottom: 1rem solid var(--green-color);
+}
+
+.home__p {
+    font-family: "Poppins";
+}
+.contact__hero {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(/asset/img/section/contact/hero.png);
+}
+.contact__ornament {
+    height: 10vh;
+    background-color: var(--green-color);
+    background-position: left;
+    background-size: cover;
+    background-image: url(/asset/img/section/meteor-garden2.png);
+}
+.about__hero {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(/asset/img/section/about__hero.png);
+    background-position-x: 50%;
+}
+.contact__bank {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(/asset/img/section/BANK-HERO.png);
+}
+.contact__home {
+    border-inline: 2rem var(--green-color) solid;
+    height: 50vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/asset/img/section/home-bg.png);
+    background-position: 40%;
+}
+.navbar-nav li a {
+    color: var(--light-color);
+}
+.score-box {
+    text-align: center;
+    background: linear-gradient(to bottom, #93c93c 0%, #487a22 100%);
+}
+.score-box h1 {
+    font-weight: bold;
+    margin: 0;
+}
+.score-box h2 {
+    margin: 0;
+}
+.logo__about h1,
+h2 {
+    font-weight: bold;
+}
+
+.about__img-bg {
+    border: 1rem solid #487a221c;
+}
+body {
+    background-color: var(--light-color);
+}
+.system__home-flow {
+    border-bottom: solid var(--lime-green-color) 1.3rem;
+}
+.flow__home {
+    background-color: #487a221c;
+}
+
+.navbar {
+    transition: all 400ms ease-in-out;
+    background-color: transparent;
+}
+
+.fill__home-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/asset/img/section/meteor-garden.png);
+}
+
+.location-info {
+    border: solid 3px var(--red-color);
+    background-color: white;
+    transition: var(--transition-normal-drs) ease-in-out;
+    color: var(--red-color);
+}
+.telepon-info {
+    border: solid 3px var(--green-color);
+    background-color: white;
+    transition: var(--transition-normal-drs) ease-in-out;
+    color: var(--green-color);
+}
+.schedule-info {
+    border: solid 3px var(--blue-color);
+    background-color: white;
+    transition: var(--transition-normal-drs) ease-in-out;
+    color: var(--blue-color);
+}
+.email-info {
+    border: solid 3px var(--dark-green-color);
+    background-color: white;
+    transition: var(--transition-normal-drs) ease-in-out;
+    color: var(--dark-green-color);
+}
+.location-info:hover {
+    background-color: var(--red-color);
+    color: var(--light-color);
+}
+.telepon-info:hover {
+    background-color: var(--green-color);
+    color: var(--light-color);
+}
+.schedule-info:hover {
+    background-color: var(--blue-color);
+    color: var(--light-color);
+}
+.email-info:hover {
+    background-color: var(--dark-green-color);
+    color: var(--light-color);
+}
+
+/* State after scrolling */
+.img-scrolled {
+    display: none;
+    opacity: 0;
+}
+.img-initial {
+    display: inline-block;
+    opacity: 1;
+}
+.img-initial,
+.img-scrolled {
+    width: 11rem;
+}
+.navbar:is(.navbar-scrolled, .navbar-expanded) {
+    background-color: var(--light-color) !important; /* Bootstrap Dark color, or any color you like */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar:is(.navbar-scrolled, .navbar-expanded) .btn-lime-green-outline {
+    color: var(--light-color);
+    background: var(--green-color);
+    border-color: transparent;
+    transition: all var(--transition-normal-drs) ease-in-out;
+}
+.navbar:is(.navbar-scrolled, .navbar-expanded) .btn-lime-green-outline:hover {
+    background-color: transparent;
+    color: var(--green-color);
+    border-color: var(--green-color);
+}
+.navbar:is(.navbar-scrolled, .navbar-expanded) .text-light-hover:hover {
+    color: var(--green-color) !important;
+}
+.navbar:is(.navbar-scrolled, .navbar-expanded) .navbar-nav .nav-item .nav-link,
+.navbar:is(.navbar-scrolled, .navbar-expanded) .navbar__btn a:first-child {
+    color: var(--dark-color);
+}
+.navbar:is(.navbar-scrolled, .navbar-expanded) .img-initial {
+    display: none;
+    opacity: 0;
+}
+.navbar:is(.navbar-scrolled, .navbar-expanded) .img-scrolled {
+    display: inline-block;
+    opacity: 1;
+}
+.navbar:is(.navbar-scrolled, .navbar-expanded) .navbar-toggler {
+    border-color: var(--dark-color);
+}
+.navbar:is(.navbar-scrolled, .navbar-expanded) .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%232f3421' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.comment__slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+}
+
+.comment__track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll__comment 40s linear infinite;
+}
+.comment__track_2 {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll__comment_2 50s linear infinite;
+}
+
+.slide__item {
+    flex-shrink: 0;
+    width: 540px;
+}
+
+/* Biar user bisa baca pas mouse di atas kartu */
+.comment__slider:hover .comment__track {
+    animation-play-state: paused;
+}
+
+@keyframes scroll__comment {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1680px);
+    }
+}
+@keyframes scroll__comment_2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1680px);
+    }
+}
+
+.comment__img-green-dark,
+.comment__img-green-lime,
+.comment__img-green {
+    background-image: url(../asset/img/section/meteor-garden2.png);
+    background-size: 70%;
+    background-position: center;
+    height: 20px;
+    width: 100%;
+    flex-shrink: 0;
+}
+.comment__img-green {
+    background-color: var(--green-color);
+}
+.comment__img-green-dark {
+    background-color: var(--dark-green-color);
+}
+.comment__img-green-lime {
+    background-color: var(--lime-green-color);
+}
+
+.footer {
+    background-color: var(--dark-green-color);
+}
+.footer__copyright {
+    border-top: 1px #f1f1f16e solid;
+}
+
+.thrash__spec-box {
+    padding: 2rem 4rem 0.5rem 4rem;
+}
+
+.metal-selection {
+    border: solid 5px var(--red-color);
+    background-color: white;
+    color: var(--red-color);
+}
+
+.metal-selection-active {
+    background-color: var(--red-color);
+    color: white;
+}
+
+.plastic-selection {
+    border: solid 5px var(--blue-color);
+    background-color: white;
+    color: var(--blue-color);
+}
+.plastic-selection-active {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.paper-selection {
+    border: solid 5px var(--green-color);
+    background-color: white;
+    color: var(--green-color);
+}
+.paper-selection-active {
+    background-color: var(--green-color);
+    color: white;
+}
+
+.weight-background {
+    background-color: white;
+}
+
+.weight-metal {
+    background-color: var(--red-color);
+    color: white;
+}
+
+.weight-plastic {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.weight-paper {
+    background-color: var(--green-color);
+    color: white;
+}
+.information__contact-margin {
+    margin-top: 3rem;
+}
+.panel {
+    display: none;
+    overflow: hidden;
+}
+.panel p {
+    color: #f1f1f1a9;
+}
+
+@media screen and (max-width: 991px) {
+    .logo__about-text {
+        width: 100% !important;
+    }
+    .logo__about {
+        margin-top: 10rem !important;
+    }
+    .score {
+        top: 0 !important;
+        position: relative !important;
+        margin-top: 2rem;
+    }
+    .navbar__pad-mobile .nav-link {
+        margin-block: 0.75rem;
+    }
+    .navbar__btn {
+        margin-top: 1.5rem;
+    }
+    .information__contact-margin {
+        margin-top: 0rem;
+    }
+    .footer__logo {
+        text-align: center;
+        flex-direction: column;
+    }
+    .hover__effect {
+        flex: 0;
+        min-width: 100%;
+    }
+    .content__overlay {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        z-index: 2;
+    }
+    .hover__effect .content__overlay svg {
+        font-size: 5rem;
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+        transition: all var(--transition-normal-drs) ease-in-out;
+    }
+    .text-content {
+        opacity: 0;
+        transition: all var(--transition-normal-drs) ease-in-out;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .hover__effect:hover .text-content {
+        opacity: 1;
+    }
+    .hover__effect:hover svg {
+        transform: translateX(0);
+        left: 0;
+    }
+    .panel__container {
+        width: 100% !important;
+    }
+    .thrash__spec-weight {
+        width: 100% !important;
+    }
+    .thrash__spec-box {
+        padding: 1rem 2rem 0.25rem 2rem !important;
+    }
+
+    .slide__item .col-lg-4 img {
+        width: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+    }
+    .slide__item {
+        max-width: 300px !important;
+        width: 300px !important;
+        flex-shrink: 0;
+    }
+
+    .comment__track {
+        animation: scroll__comment_mobile 20s linear infinite;
+    }
+
+    @keyframes scroll__comment_mobile {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-924px);
+        }
+    }
+
+    .brand__login a {
+        padding: 0.3rem !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer__logo {
+        text-align: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web Bank Sampah</title>
+        <link rel="shortcut icon" href="asset/img/logo/ThrowIT_logo_without_text.png" type="image/x-icon" />
+        <link rel="stylesheet" href="asset/plugin/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="asset/plugin/boxicon/fonts/basic/boxicons.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="asset/plugin/fontawesome/css/all.min.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-dark navbar-expand-lg position-fixed start-0 end-0 z-3 p-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="asset/img/logo/ThrowIT_logo_white.png" class="img-initial" />
+                    <img src="asset/img/logo/ThrowIT_logo_Main.png" class="img-scrolled" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar__pad-mobile mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-2">
+                            <a
+                                class="nav-link text-light-hover fw-medium fs-custom"
+                                aria-current="page"
+                                href="index.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-light-hover fw-medium fs-custom" href="bank.html">Bank</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-light-hover fw-medium fs-custom" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-light-hover fw-medium fs-custom" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="navbar__btn d-flex align-items-center justify-content-end mx-2">
+                        <a
+                            class="me-3 text-lime-green text-decoration-none fw-medium fs-custom text-light-hover"
+                            href="login.html"
+                            >Sign in</a
+                        >
+                        <a href="signUP.html" class="btn btn-lime-green-outline rounded-pill" type="submit"
+                            >Get Started</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <section class="home d-flex justify-content-center align-items-center">
+            <div class="container w-100 text-center">
+                <h1 class="text-light text-center display-2 fw-bolder mb-4">
+                    THROW IT, TURN IT, <span class="d-sm-block text-lime-green"> MAKE IT WORTH</span>
+                </h1>
+                <p class="home__p text-white fs-5 mb-5 fw-light w-75 mx-auto fw-medium">
+                    Collect Your Trash, Help Us Save the Environment
+                </p>
+                <button class="btn btn-lime-green-outline rounded-pill" type="submit">Get Started</button>
+            </div>
+        </section>
+
+        <!-- SCORE -->
+        <div class="score-block position-relative">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="score position-absolute w-75" style="top: -6rem">
+                    <div class="container p-4 rounded">
+                        <div class="row justify-content-center row-gap-3">
+                            <div class="col-lg-4">
+                                <div
+                                    class="score-box py-3 rounded-3 d-flex justify-content-center align-items-center gap-3 text-light h-100"
+                                >
+                                    <i class="fa-solid fa-weight-hanging display-1"></i>
+                                    <div class="me-3">
+                                        <h4 class="display-6 text-light mb-0">200</h4>
+                                        <h6 class="fw-medium fs-5 text-light">Kilogram</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div
+                                    class="score-box py-3 rounded-3 d-flex justify-content-center align-items-center gap-3 text-light h-100"
+                                >
+                                    <i class="fa-solid fa-users display-1"></i>
+                                    <div>
+                                        <h4 class="display-6 text-light mb-0">400+</h4>
+                                        <h6 class="fw-medium fs-4 text-light">Client</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div
+                                    class="score-box py-3 rounded-3 d-flex justify-content-center align-items-center gap-3 text-light h-100"
+                                >
+                                    <i class="fa-solid fa-trash-can display-1"></i>
+                                    <div class="me-4">
+                                        <h4 class="display-6 text-light mb-0">2.8</h4>
+                                        <h6 class="fw-medium fs-4 text-light">Million</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <div class="logo__about container" style="margin-top: 15rem">
+            <div class="logo__about-text my-auto text-center w-75 container">
+                <h2 class="display-4 fw-bold mb-2">Get to <span class="text-success">Know Us Better</span></h2>
+                <p>
+                    Learn about our commitment to environmental preservation and how we help communities through
+                    professional recycling.
+                </p>
+                <img src="asset/img/section/about__hero.png" class="img-fluid rounded my-3 about__img-bg" />
+                <p class="mb-4">
+                    Throw IT is a non-profit dedicated to turning waste into value. We empower our community to build a
+                    cleaner environment through a rewarding circular economy. For every kilogram of waste you deposit,
+                    you receive rewards based on its volume and type. Join us in turning recyclables into assets and
+                    cleaning our planet, one deposit at a time.
+                </p>
+                <div>
+                    <a type="button" class="btn btn-green-outline rounded-pill" href="about.html">Know More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="spacing"></div>
+
+        <!-- SYSTEM FLOW -->
+        <section class="flow__home my-5 py-5">
+            <h2 class="display-4 fw-bold text-center" style="margin-bottom: 5rem">
+                System <span class="text-success">Flow</span>
+            </h2>
+            <div class="container">
+                <div class="row justify-content-center text-center row-gap-5 w-75 mx-auto">
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div
+                            class="flow__home-container border-2 bg-white border border-success position-relative h-100 rounded-3 p-5 d-flex justify-content-center"
+                        >
+                            <img
+                                style="top: -52px; width: 6rem"
+                                class="position-absolute mx-auto"
+                                src="asset/img/section/flow_system/flow-icon-1.png"
+                                alt=""
+                            />
+                            <div class="flow__contact-text mt-5">
+                                <p class="fw-bold">Gather your trash and exchange with us</p>
+                            </div>
+                            <img
+                                style="bottom: -24px; width: 3rem"
+                                class="position-absolute mx-auto"
+                                src="asset/img/section/flow_system/no-1.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div
+                            class="flow__home-container position-relative h-100 bg-white border border-2 border-success rounded-3 p-5 d-flex justify-content-center"
+                        >
+                            <img
+                                class="position-absolute mx-auto"
+                                src="asset/img/section/flow_system/flow-icon-2.png"
+                                alt=""
+                                style="top: -52px; width: 6rem"
+                            />
+                            <div class="flow__contact-text mt-5 text-center">
+                                <p class="fw-bold">Say goodbye to your trash</p>
+                            </div>
+                            <img
+                                style="bottom: -24px; width: 3rem"
+                                class="position-absolute mx-auto"
+                                src="asset/img/section/flow_system/no-2.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div
+                            class="flow__home-container position-relative h-100 bg-white border border-2 border-success rounded-3 p-5 d-flex justify-content-center"
+                        >
+                            <img
+                                class="position-absolute mx-auto"
+                                style="top: -52px; width: 6rem"
+                                src="asset/img/section/flow_system/flow-icon-3.png"
+                                alt=""
+                            />
+                            <div class="benefit__contact-text mt-5">
+                                <p class="fw-bold">Earn our gratitude and respect</p>
+                            </div>
+                            <img
+                                style="bottom: -24px; width: 3rem"
+                                class="position-absolute mx-auto"
+                                src="asset/img/section/flow_system/no-3.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacing"></div>
+
+        <!-- THRASH TYPE -->
+        <section class="thrash__type my-5">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="display-4 fw-bold mb-2">Trash That <span class="text-success">We Accept</span></h2>
+                    <p class="w-75 mx-auto">
+                        we accept a wide range of dry recyclables from plastics and paper to metals and electronics
+                        turning your household waste into valuable community assets.
+                    </p>
+                </div>
+                <div class="container">
+                    <div class="thrash__type-container row gap-2" style="min-height: 450px">
+                        <div class="col-lg-4 p-0 hover__effect effect_red">
+                            <img src="asset/img/section/trash_category/Metal.jpg" class="img-fluid" alt="" />
+                            <div class="content__overlay text-light">
+                                <i class="fa-solid fa-cubes display-1"></i>
+                                <div class="text-content px-4">
+                                    <h3 class="display-4">Metal</h3>
+                                    <p>We accept Aluminum Can, Steel Scrap, Unused Electronic and more.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-0 hover__effect effect_blue">
+                            <img src="asset/img/section/trash_category/plastic.jpg" class="img-fluid" alt="" />
+                            <div class="content__overlay text-light">
+                                <i class="fa-solid fa-bottle-water display-1"></i>
+                                <div class="text-content px-4">
+                                    <h3 class="display-4">Plastic</h3>
+                                    <p>
+                                        We accept Plastic Bottle, Product Container, Cup, Styrofoam, Multi-layered
+                                        Plastic and more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-0 hover__effect effect_green">
+                            <img src="asset/img/section/trash_category/paper.jpg" class="img-fluid" alt="" />
+                            <div class="content__overlay text-light">
+                                <i class="fa-solid fa-book display-1"></i>
+                                <div class="text-content px-4">
+                                    <h3 class="display-4">Paper</h3>
+                                    <p>We accept Box, Book, Newspaper, Document, Magazine, Paper bag and more.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacing"></div>
+
+        <!-- FILL BANK -->
+        <section class="fill__home w-100 position-relative bg-success py-5 my-5">
+            <div class="fill__home-overlay"></div>
+            <div class="fill__home-container d-flex justify-content-around flex-column align-items-center text-light">
+                <i class="fa-solid fa-trash-arrow-up mb-4" style="font-size: 8rem"></i>
+                <h2 class="fw-bold text-white mb-4">FILL YOUR <span class="text-warning">BANK</span></h2>
+                <a href="bank.html" class="btn btn-lime-green-outline z-1 rounded-pill">Get Started</a>
+            </div>
+        </section>
+
+        <div class="spacing"></div>
+        <!-- COMMENT-->
+        <section class="comment__home">
+            <div class="container-fluid">
+                <h2 class="display-4 fw-bold mb-2 text-center">
+                    The Voice of <span class="text-success">Wise People</span>
+                </h2>
+                <div class="comment__slider d-flex gap-2">
+                    <div class="comment__track">
+                        <div class="card slide__item" style="max-width: 540px">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-4 p-3">
+                                    <img
+                                        src="asset/img/section/voice/user_green.png"
+                                        class="img-fluid rounded-start"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alexander zhimmer</h5>
+                                        <p class="card-text">
+                                            This is such a great initiative! Turning waste into something valuable is an
+                                            amazing way to protect our environment.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">Last updated 4 days ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer comment__img-green"></div>
+                        </div>
+                        <div class="card slide__item" style="max-width: 540px">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-4">
+                                    <img
+                                        src="asset/img/section/voice/user_green_dark.png"
+                                        class="img-fluid rounded-start p-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Michael Jordan</h5>
+                                        <p class="card-text">
+                                            This is a wider card with supporting text below as a natural lead-in to
+                                            additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer comment__img-green-dark"></div>
+                        </div>
+                        <div class="card slide__item" style="max-width: 540px">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-4">
+                                    <img
+                                        src="asset/img/section/voice/user_green_lime.png"
+                                        class="img-fluid rounded-start p-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jhonny Gabe</h5>
+                                        <p class="card-text">
+                                            Finally, a waste bank that feels professional! The digital tracking is so
+                                            transparent. I always know exactly how much my balance is increasing after
+                                            every deposit.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">Last updated 20 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer comment__img-green-lime"></div>
+                        </div>
+                        <div class="card slide__item" style="max-width: 540px">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-4 p-3">
+                                    <img
+                                        src="asset/img/section/voice/user_green_3.png"
+                                        class="img-fluid rounded-start"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lebron James</h5>
+                                        <p class="card-text">
+                                            This is such a great initiative! Turning waste into something valuable is an
+                                            amazing way to protect our environment.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">Last updated 4 days ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer comment__img-green"></div>
+                        </div>
+                        <div class="card slide__item" style="max-width: 540px">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-4">
+                                    <img
+                                        src="asset/img/section/voice/user_green_dark_3.png"
+                                        class="img-fluid rounded-start p-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Travis Scot</h5>
+                                        <p class="card-text">
+                                            I love the pickup service. It makes recycling so much easier when you have a
+                                            busy schedule. The weighing process is fast, fair, and totally free
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">Last updated 1 days ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer comment__img-green-dark"></div>
+                        </div>
+                        <div class="card slide__item" style="max-width: 540px">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-4">
+                                    <img
+                                        src="asset/img/section/voice/user_green_lime_5.png"
+                                        class="img-fluid rounded-start p-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jhonny Xander</h5>
+                                        <p class="card-text">
+                                            Highly recommend! Turning my plastic and paper into extra income is a
+                                            win-win. The competitive prices and professional service really set this
+                                            place apart.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">Last updated 1 hours ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer comment__img-green-lime"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment__slider d-flex gap-2">
+                    <div class="comment__track">
+                        <div class="card slide__item" style="max-width: 540px">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-4 p-3">
+                                    <img
+                                        src="asset/img/section/voice/user_green_dark_3.png"
+                                        class="img-fluid rounded-start"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Trevor Anderson</h5>
+                                        <p class="card-text">
+                                            It feels great knowing my household waste isn't just sitting in a landfill.
+                                            This system makes it easy to be part of the solution for a cleaner, greener
+                                            community.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">Last updated 10 days ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer comment__img-green"></div>
+                        </div>
+                        <div class="card slide__item" style="max-width: 540px">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-4">
+                                    <img
+                                        src="asset/img/section/voice/user_green_2_female.png"
+                                        class="img-fluid rounded-start p-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cassy morgan</h5>
+                                        <p class="card-text">
+                                            Finally, a waste bank that values my time! The pickup service is punctual,
+                                            and the weighing process is handled with professional-grade equipment. It’s
+                                            never been easier to go green.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">Last updated 7 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer comment__img-green-dark"></div>
+                        </div>
+                        <div class="card slide__item" style="max-width: 540px">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-4">
+                                    <img
+                                        src="asset/img/section/voice/user_green_5.png"
+                                        class="img-fluid rounded-start p-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Carl Joestar</h5>
+                                        <p class="card-text">
+                                            I was surprised by how much my 'trash' was actually worth. With their
+                                            competitive rates and seamless payout system, I’ve turned my household waste
+                                            into a steady stream of extra savings.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">Last updated 45 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer comment__img-green-lime"></div>
+                        </div>
+                        <div class="card slide__item" style="max-width: 540px">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-4 p-3">
+                                    <img
+                                        src="asset/img/section/voice/user_green_dark_2_female.png"
+                                        class="img-fluid rounded-start"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lisandra Baron</h5>
+                                        <p class="card-text">
+                                            I feel confident knowing my sorted waste is being handled by experts. This
+                                            platform provides the perfect bridge between my home and a truly circular
+                                            economy.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">Last updated 2 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer comment__img-green"></div>
+                        </div>
+                        <div class="card slide__item" style="max-width: 540px">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-4">
+                                    <img
+                                        src="asset/img/section/voice/user_green_3.png"
+                                        class="img-fluid rounded-start p-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Adam Ibnul</h5>
+                                        <p class="card-text">
+                                            The transition from 'messy waste' to 'digital balance' is incredibly smooth.
+                                            No long queues, no complicated forms, professional service that
+                                            actually works for the community.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">Last updated 20 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer comment__img-green-dark"></div>
+                        </div>
+                        <div class="card slide__item" style="max-width: 540px">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-4">
+                                    <img
+                                        src="asset/img/section/voice/user_green_lime_3_female.png"
+                                        class="img-fluid rounded-start p-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alexa mamayor</h5>
+                                        <p class="card-text">
+                                            The fastest weighing and payout process I've experienced. No more waiting
+                                            around or dealing with manual errors. everything is automated, precise, and
+                                            highly efficient.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">Last updated 1 days ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer comment__img-green-lime"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacing"></div>
+
+        <!-- CONTACT -->
+        <section class="contact__home py-5">
+            <div class="container text-light h-100">
+                <div class="d-flex align-items-center justify-content-center flex-column h-100 text-center">
+                    <h2 class="text-white fw-bold display-4">
+                        GET IN TOUCH <span class="text-lime-green fw-bold">WITH US</span>
+                    </h2>
+                    <a class="btn btn-lime-green-outline rounded-pill mt-3" href="contact.html">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacing"></div>
+
+        <div class="gallery">
+            <div class="container">
+                <div class="row row-gap-4">
+                    <div class="col-lg-4">
+                        <img src="asset/img/section/gallery/sampah3.jpg" class="img-fluid rounded-3 h-100" />
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="asset/img/section/gallery/sampah1.jpg" class="img-fluid rounded-3" />
+                        <img src="asset/img/section/gallery/sampah2.jpg" class="img-fluid rounded-3 py-4" />
+                        <img src="asset/img/section/gallery/sampah5.jpg" class="img-fluid rounded-3" />
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="asset/img/section/gallery/sampah4.jpg" class="img-fluid rounded-3 h-100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spacing"></div>
+
+        <!-- MAPS -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8999.306123745711!2d115.26554766341717!3d-8.541921774277593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d9281ad70ed%3A0x8a2f9db3b92cf2a3!2sJl.%20Ambarawati%2C%20Kecamatan%20Ubud%2C%20Kabupaten%20Gianyar%2C%20Bali%2080571!5e0!3m2!1sid!2sid!4v1773573446158!5m2!1sid!2sid"
+            height="300"
+            style="border: 0; width: 100%"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <!-- FOOTER -->
+        <footer class="footer pt-5">
+            <div class="container">
+                <div class="row row-gap-5 text-light mb-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer__logo d-flex justify-content-center align-items-center rounded-3">
+                            <img src="asset/img/logo/ThrowIT_logoArtboard 1_45.png" class="w-50" alt="ThrowIT Logo" />
+                            <p class="ms-lg-4 mt-2">
+                                Creating a healthier environment by using Throw IT to inspire awareness and responsible
+                                waste habits in every home.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer__bank text-center">
+                            <i class="fa-solid fa-trash-arrow-up" style="font-size: 7rem"></i>
+                            <h1 class="fw-bold text-light mb-3 mt-2">
+                                FILL YOU <span class="text-warning">BANK</span>
+                            </h1>
+                            <a href="signUP.html" class="btn btn-lime-green-outline rounded-pill">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                        <div class="footer__nav">
+                            <h6>Navigation:</h6>
+                            <ul class="mb-2 navbar-nav navbar-nav_center">
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="bank.html">Bank</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                        <div class="footer__nav">
+                            <h6>Most Views:</h6>
+                            <ul class="mb-2 navbar-nav navbar-nav_center">
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="bank.html#calculation">Calculation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="bank.html#payment">Payment</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="about.html#team">Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-hover" href="contact.html#question">Question</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright text-light d-flex align-items-center justify-content-between py-3">
+                    <h6>Copyright @2026; Designed by Throw IT Team</h6>
+                    <div class="footer__social">
+                        <ul class="navbar-nav flex-row">
+                            <li class="nav-item me-1">
+                                <a class="nav-link" href="https://www.instagram.com/" target="_blank">
+                                    <i class="fa-brands fa-instagram fs-4 text-light-hover"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-1">
+                                <a class="nav-link" href="https://www.facebook.com/?locale=id_ID" target="_blank">
+                                    <i class="fa-brands fa-facebook fs-4 text-light-hover"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-1">
+                                <a class="nav-link" href="https://www.youtube.com/" target="_blank">
+                                    <i class="fa-brands fa-youtube fs-4 text-light-hover"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-1">
+                                <a class="nav-link" href="https://www.tiktok.com/id-ID/" target="_blank">
+                                    <i class="fa-brands fa-tiktok fs-4 text-light-hover"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="asset/plugin/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="asset/plugin/fontawesome/js/all.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
